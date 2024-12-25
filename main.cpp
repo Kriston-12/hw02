@@ -117,6 +117,10 @@ struct List {
         }
         return curr;
     }
+    
+    ~List() {
+        printf("Destructor of list is called\n");
+    }
 };
 
 void print(const List& lst) {  // 有什么值得改进的？加上&避免调用copy constructor
